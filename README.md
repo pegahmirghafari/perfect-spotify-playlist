@@ -3,7 +3,7 @@ generating a playlist, based on a song, from your liked songs only!
 # “After that communism was the only answer for me, I thought. And if you can’t be a communist and make money you have to be a rock n roll star, at least in Hoboken. “ -Lou Reed
 
 My dream job would be working for Spotify as a data scientist since their product is the only product I can 100% get behind, 
-# "and if I can't be a rock 'n' roll start and make money, then Spotify is the only answer for me, I thought, at least in Brooklyn." 
+# "and if I can't be a rock 'n' roll star and make money, then Spotify is the only answer for me, I thought; at least in Brooklyn." 
 I knew right from the start that I will dedicate my most crucial project to rock n roll and Spotify. 
 I was lost, however,  as to what I wanted to do. What is not done yet?. One day when for the 100th time someone asked me for my Spotify playlist, I found myself having to explain once again why I do not have any playlists. 
 The truth of the matter is that liking a song is straightforward on Spotify. I can do it in less than a second, but making a playlist is an art or a dire project on its own, one that I was dreading to tackle. Where should I start? There are MANY ways I could categorize my liked songs and make a playlist based on a song's mood, similarity amongst artists, their genres, language, decade, story, and thousands of other ways that I cannot even imagine. Too many options always crippled my decision-making abilities, and now I was left with more than two thousand songs in my playlist that I played on shuffle. They would change my mood from a hopeless romantic to just mindlessly dancing, and that was only half of it.  
