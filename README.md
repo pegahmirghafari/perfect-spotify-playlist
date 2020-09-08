@@ -58,6 +58,7 @@ ___
 <br/> 
 
 <img src="./Assets/heatmap.png" width="100%" height="100%">
+
 **Analysis:**  
 - danceability has a high correlation with valence (how happy a song is), but no other significant relations with any other features, not even the tempo, which is interesting to see. as a matter of fact danceability seems to have a negative correlation with tempo!
 - energy seems to be directly correlated with higher valence. songs that are higher in energy seem to also be VERY LOUD! and it looks like they have a very negative relation with causticness, meaning high energy songs are not acoustic and acoustic songs are low in energy!
@@ -77,6 +78,7 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
 <img src="./Assets/mode.png" width="80%" height="60%">
 
 **Analysis:** 
+
 - there seems to be very little music made in the minor keys
 
 ***for more analytics go to the [EDA notebook](https://github.com/pegahmirghafari/perfect-spotify-playlist/blob/main/02_EDA.ipynb)***
