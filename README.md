@@ -27,7 +27,6 @@ ___
     
 <br/> 
 ___
-
 ## Data Dictionary:
 The data scraped for this project was from my own personal spotify liked songs.  
 
@@ -84,8 +83,8 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
 ***for more analytics go to the [EDA notebook](https://github.com/pegahmirghafari/perfect-spotify-playlist/blob/main/02_EDA.ipynb)***
  
 <br/> 
-___
 
+___
 ## Preprocessing
 <br/> 
 by adding the name of the artist to the song, and lower-casing them I will save myself some headach. 
@@ -106,10 +105,9 @@ for this recomendation sysytem, we are assuming that each song is it's own vecto
 **here is a list of songs I got recomended based on ***harvest moon, neil young'***.**
 
 <img src="./Assets/recomendation.png" width="100%" height="100%">
-
 <br/> 
-___
 
+___
 ## Next Steps
 <br/> 
 
