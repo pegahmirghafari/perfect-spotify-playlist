@@ -25,6 +25,7 @@ ___
     
 <br/> 
 ___
+
 ## Data Dictionary:
 The data scraped for this project was from my own personal spotify liked songs.  
 
@@ -49,6 +50,7 @@ The data scraped for this project was from my own personal spotify liked songs.
 
 Descriptions were taken from the official documentation at Spotify's Developer website [here](https://developer.spotify.com/documentation/web-api/reference/tracks/get-several-audio-features/). They desplay the distribution of the metrics.
 ___
+
 ## Exploratory Data Analysis
 
 <br/> 
@@ -79,6 +81,7 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
  
 <br/> 
 ___
+
 ## Preprocessing
 <br/> 
 by adding the name of the artist to the song, and lower-casing them I will save myself some headach. 
@@ -102,6 +105,7 @@ for this recomendation sysytem, we are assuming that each song is it's own vecto
 
 <br/> 
 ___
+
 ## Next Steps
 <br/> 
 
