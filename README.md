@@ -74,8 +74,8 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
 -danceability and tempo seem to have a very normal distribution. it is worth mentioning that some of the other features seem to fall under categorical variables, *ie. mode, key, time-sig.*
 -  liveliness, and acoustic-nessis are right skewed, however the latter seems to have an outlier. valence and energy are left skewed, meaning they are more happy and higher energy songs in my liked songs!
 
-<img src="./Assets/key.png" width="80%" height="60%"> 
-<img src="./Assets/mode.png" width="80%" height="60%">
+<img src="./Assets/key.png" width="70%" height="50%"> 
+<img src="./Assets/mode.png" width="70%" height="50%">
 
 **Analysis:** 
 
@@ -105,7 +105,7 @@ for this recomendation sysytem, we are assuming that each song is it's own vecto
 - for what it's worth and considering how small my dataframe was this these are spot on recomendations
 **here is a list of songs I got recomended based on ***harvest moon, neil young'***.**
 
-<img src="./Assets/recomendation.png" width="100%" height="100%">
+<img src="./Assets/recomendation.png" width="80%" height="60%">
 <br/> 
 
 ___
