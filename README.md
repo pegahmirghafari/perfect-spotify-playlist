@@ -1,6 +1,7 @@
 # The Perfect-Spotify-Playlist
 *Pegah Mirghafari*
 ___
+
 ## WHY?!
 
 generating a playlist, based on a song, from your liked songs only! 
@@ -16,6 +17,7 @@ If one listens to "you give love a bad name," on its own, on high volume, one mi
 That was it! This is my destiny! This is why it was brought here on earth!!! I need to automate Spotify to make various playlists on my liked songs, and like songs alone, and do it fast, because while I like to pretend that I am an open-minded person, I have to admit I'm close-minded when it comes to music! I only listen to the 2000 songs I've liked, occasionally adding one or two to the collection. Besides, creating a playlist seems like such a daunting task. Either I would get too distracted and end up with a five-song playlist, or I would lay in my bed static upon waking up, dedicating 10 hours to the task. Either way, I would wind up frustrated. 
 ### So here it is, an app that takes YOUR liked songs and creates a 20-song playlist for you, based on any song you choose! The first ten are in ascending order of tempo, and the next then in descending order, because WHAT GOSE UP MUST COME DOWN -Isaac Newton(probably).  
 ___
+
 ## Index:
 - [Data Dictionary](#Data-Dictionary)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
@@ -77,7 +79,7 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
 **Analysis:** 
 - there seems to be very little music made in the minor keys
 
-***for more analytics go to the [EDA notebook](https://github.com/pegahmirghafari/perfect-spotify-playlist/blob/main/02_EDA.ipynb)
+***for more analytics go to the [EDA notebook](https://github.com/pegahmirghafari/perfect-spotify-playlist/blob/main/02_EDA.ipynb)***
  
 <br/> 
 ___
