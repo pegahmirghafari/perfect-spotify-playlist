@@ -1,7 +1,6 @@
 # The Perfect-Spotify-Playlist
 *Pegah Mirghafari*
 ___
-
 ## WHY?!
 
 generating a playlist, based on a song, from your liked songs only! 
@@ -16,23 +15,16 @@ Then, I remembered the time I was listening to "Going to California" by Led Zepp
 If one listens to "you give love a bad name," on its own, on high volume, one might enjoy it. But when you're lost in the dreams of "going to California, the last thing you want is Bon Jovi accusing you of giving love a bad name. It could give you a heart attack! 
 That was it! This is my destiny! This is why it was brought here on earth!!! I need to automate Spotify to make various playlists on my liked songs, and like songs alone, and do it fast, because while I like to pretend that I am an open-minded person, I have to admit I'm close-minded when it comes to music! I only listen to the 2000 songs I've liked, occasionally adding one or two to the collection. Besides, creating a playlist seems like such a daunting task. Either I would get too distracted and end up with a five-song playlist, or I would lay in my bed static upon waking up, dedicating 10 hours to the task. Either way, I would wind up frustrated. 
 ### So here it is, an app that takes YOUR liked songs and creates a 20-song playlist for you, based on any song you choose! The first ten are in ascending order of tempo, and the next then in descending order, because WHAT GOSE UP MUST COME DOWN -Isaac Newton(probably).  
-
-
 ___
-
 ## Index:
 - [Data Dictionary](#Data-Dictionary)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Preprocessing](#Preprocessing)
 - [Recommender](#Recommender)
 - [Next Steps](#Next-Steps)
-  
-      
-<br/>
-<br/>  
-
+    
+<br/> 
 ___
-
 ## Data Dictionary:
 The data scraped for this project was from my own personal spotify liked songs.  
 
@@ -53,17 +45,15 @@ The data scraped for this project was from my own personal spotify liked songs.
 |time_signature|int|An estimated overall time signature of a track. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure).|
 |uri|Object|Spotify's unique identfier for the track. Entering this id into Spotify's search will bring you directly to that specific track.|
 
-
 <br/> 
 
 Descriptions were taken from the official documentation at Spotify's Developer website [here](https://developer.spotify.com/documentation/web-api/reference/tracks/get-several-audio-features/). They desplay the distribution of the metrics.
 ___
-
 ## Exploratory Data Analysis
 
 <br/> 
 
-<img src="./heatmap.png" width="100%" height="100%">
+<img src="./Assets/heatmap.png" width="100%" height="100%">
 **Analysis:**  
 - danceability has a high correlation with valence (how happy a song is), but no other significant relations with any other features, not even the tempo, which is interesting to see. as a matter of fact danceability seems to have a negative correlation with tempo!
 - energy seems to be directly correlated with higher valence. songs that are higher in energy seem to also be VERY LOUD! and it looks like they have a very negative relation with causticness, meaning high energy songs are not acoustic and acoustic songs are low in energy!
@@ -72,14 +62,16 @@ ___
 - acoustic ness seems to have a negative correlation with many of the features, most notably with loudness and energy.
 key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the rest of a features.
 
-<img src="./distribution.png" width="100%" height="100%"> 
+<img src="./Assets/distribution.png" width="100%" height="100%"> 
+
 **Analysis:** 
 - speechiness, instrumentaliness, duration liveness, and loudness all seem to have outliers!
 -danceability and tempo seem to have a very normal distribution. it is worth mentioning that some of the other features seem to fall under categorical variables, *ie. mode, key, time-sig.*
 -  liveliness, and acoustic-nessis are right skewed, however the latter seems to have an outlier. valence and energy are left skewed, meaning they are more happy and higher energy songs in my liked songs!
 
 <img src="./Assets/key.png" width="80%" height="60%"> 
-<img src="./mode.png" width="80%" height="60%">
+<img src="./Assets/mode.png" width="80%" height="60%">
+
 **Analysis:** 
 - there seems to be very little music made in the minor keys
 
@@ -87,7 +79,6 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
  
 <br/> 
 ___
-
 ## Preprocessing
 <br/> 
 by adding the name of the artist to the song, and lower-casing them I will save myself some headach. 
@@ -111,11 +102,9 @@ for this recomendation sysytem, we are assuming that each song is it's own vecto
 
 <br/> 
 ___
-
 ## Next Steps
 <br/> 
 
 - the very first thing I will do is create a flask app. 
 - then create a ui with react.
 - lastly I will host the app on a heroku server, since I really enjoyed it and I believe others could enjoy it as well. ***especially my firends*** 
-
