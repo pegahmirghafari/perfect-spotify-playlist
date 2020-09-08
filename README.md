@@ -25,10 +25,10 @@ ___
 - [Recommender](#Recommender)
 - [Next Steps](#Next-Steps)
     
-<br/>
 ___
 
 ## Data Dictionary:
+<br/>
 The data scraped for this project was from my own personal spotify liked songs.  
 
 |Feature|Type|Description|
