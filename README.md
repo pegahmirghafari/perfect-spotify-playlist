@@ -1,10 +1,10 @@
 # The Perfect-Spotify-Playlist
 *Pegah Mirghafari*
 ___
-## Problem Statement
+
+## WHY?!
 
 generating a playlist, based on a song, from your liked songs only! 
-
 **“After that communism was the only answer for me, I thought. And if you can’t be a communist and make money you have to be a rock n roll star, at least in Hoboken. “ -Lou Reed**
 
 My dream job would be working for Spotify as a data scientist since their product is the only product I can 100% get behind, **"and if I can't be a rock 'n' roll star and make money, then Spotify is the only answer for me, I thought; at least in Brooklyn."**
@@ -19,12 +19,12 @@ That was it! This is my destiny! This is why it was brought here on earth!!! I n
 
 
 ___
-## Contents:
+
+## Index:
 - [Data Dictionary](#Data-Dictionary)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
 - [Preprocessing](#Preprocessing)
-- [Recommender Summary](#Recommender-Summary)
-- [Limitations](#Limitations)
+- [Recommender](#Recommender)
 - [Next Steps](#Next-Steps)
   
       
@@ -51,8 +51,71 @@ The data scraped for this project was from my own personal spotify liked songs.
 |tempo|float|The overall estimated tempo of a track in beats per minute (BPM). In musical terminology, tempo is the speed or pace of a given piece and derives directly from the average beat duration.|
 |duration_ms|int|Duration of song in milliseconds.|
 |time_signature|int|An estimated overall time signature of a track. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure).|
+|uri|Object|Spotify's unique identfier for the track. Entering this id into Spotify's search will bring you directly to that specific track.|
 
 
 <br/> 
 
 Descriptions were taken from the official documentation at Spotify's Developer website [here](https://developer.spotify.com/documentation/web-api/reference/tracks/get-several-audio-features/). They desplay the distribution of the metrics.
+___
+
+## Exploratory Data Analysis
+
+<br/> 
+
+<img src="./heatmap.png" width="100%" height="100%">
+**Analysis:**  
+- danceability has a high correlation with valence (how happy a song is), but no other significant relations with any other features, not even the tempo, which is interesting to see. as a matter of fact danceability seems to have a negative correlation with tempo!
+- energy seems to be directly correlated with higher valence. songs that are higher in energy seem to also be VERY LOUD! and it looks like they have a very negative relation with causticness, meaning high energy songs are not acoustic and acoustic songs are low in energy!
+- to my surprise tempo doesn't seem to be highly correlated to danceability, energy or the valence of the song. however songs with higher tempo seem to be just moderately related to it's time-signiture, I was expecting a much stronger correlation.
+- duration seems to have the most negative correlation with other features, most notables are: valance and danceability.I though duration and liveness would have a positive correlation, since live performances tend to have a monolog before or after the performance, or could have a longer guitar solo.
+- acoustic ness seems to have a negative correlation with many of the features, most notably with loudness and energy.
+key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the rest of a features.
+
+<img src="./distribution.png" width="100%" height="100%"> 
+**Analysis:** 
+- speechiness, instrumentaliness, duration liveness, and loudness all seem to have outliers!
+-danceability and tempo seem to have a very normal distribution. it is worth mentioning that some of the other features seem to fall under categorical variables, *ie. mode, key, time-sig.*
+-  liveliness, and acoustic-nessis are right skewed, however the latter seems to have an outlier. valence and energy are left skewed, meaning they are more happy and higher energy songs in my liked songs!
+
+<img src="./Assets/key.png" width="80%" height="60%"> 
+<img src="./mode.png" width="80%" height="60%">
+**Analysis:** 
+- there seems to be very little music made in the minor keys
+
+***for more analytics go to the [EDA notebook](https://github.com/pegahmirghafari/perfect-spotify-playlist/blob/main/02_EDA.ipynb)
+ 
+<br/> 
+___
+
+## Preprocessing
+<br/> 
+by adding the name of the artist to the song, and lower-casing them I will save myself some headach. 
+I will keep the uri to later search songs on spotify wit it and add them to the playlist
+
+### Standard Scaling
+the name-artist column is the index, and by dropping the uri I only have numeric data.  standatd scaler my data. this assures that each column will have a μ = 0 and σ = 1, in simple english it means they are now all on the same scale!
+
+### Cosine Similarity
+now i'm going to use cosine similarity from sklearn, this is a meassure of similarity between two non-zero vectors, by meassuring the cosign of the angle between them. as we know cosine of 0° and 180° are 1 and -1 respectedly, and cosign of any other angle falls between the two, with cosine of 90° and 270° are both 0. therefore, we are comparing the possition of each item along the circle. this means two items taht are most simmilar will have an identical orientation and cosine simmilarity of 1, two items that have a 90° angle between their orientation will have a cosine simmilarity of 0, and if theyhave a cosine simmilarity of -1 then they are on the opposite sides of the spacterum, and will therefore have 180° angle between them.
+for this recomendation sysytem, we are assuming that each song is it's own vector, with unique features, we will create a recomendation system by comparing each song (vector) to every other song in a big matrix.
+
+## Recommender 
+- the recomendations are generated based on track features. 
+- this will assure that the songs in the playlist are musically simmilar, which is what i was hopeing for. 
+- I do not wish the recomender to be 100% accurate as I don't want to end up with a playlist of the same song on repeat.
+- for what it's worth and considering how small my dataframe was this these are spot on recomendations
+**here is a list of songs I got recomended based on ***harvest moon, neil young'***.**
+
+<img src="./Assets/recomendation.png" width="100%" height="100%">
+
+<br/> 
+___
+
+## Next Steps
+<br/> 
+
+- the very first thing I will do is create a flask app. 
+- then create a ui with react.
+- lastly I will host the app on a heroku server, since I really enjoyed it and I believe others could enjoy it as well. ***especially my firends*** 
+
