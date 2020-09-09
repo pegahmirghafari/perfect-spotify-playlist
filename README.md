@@ -106,7 +106,9 @@ For this recommendation system, we are assuming that each song is it's own vecto
 **here is a list of songs I got recommended based on ***Harvest Moon, Neil Young'***.**
 
 <img src="./Assets/recomendation.png" width="80%" height="60%">
+
 ***to see the playlist [click here](https://open.spotify.com/playlist/3XzHt8AN6CndbbK9GvJJEX?si=pfRVVLjKS76c7IGzbs50kg)***
+
 <br/> 
 
 ___
