@@ -9,15 +9,15 @@ ___
 
 **“After that communism was the only answer for me, I thought. And if you can’t be a communist and make money you have to be a rock n roll star, at least in Hoboken. “ -Lou Reed**
 
-My dream job would be working for Spotify as a data scientist since their product is the only product I can 100% get behind, **"and if I can't be a rock 'n' roll star and make money, then Spotify is the only answer for me, I thought; at least in Brooklyn."**
+My dream job would be working for Spotify as a data scientist since their product is the only product I can 100% get behind, **" and if I can't be a rock 'n' roll star and make money, then Spotify is the only answer for me, I thought; at least in Brooklyn."**
 I knew right from the start that I will dedicate my most crucial project to rock n roll and Spotify. 
 I was lost, however,  as to what I wanted to do. What is not done yet?. One day when for the 100th time someone asked me for my Spotify playlist, I found myself having to explain once again why I do not have any playlists. 
 The truth of the matter is that liking a song is straightforward on Spotify. I can do it in less than a second, but making a playlist is an art or a dire project on its own, one that I was dreading to tackle. Where should I start? There are MANY ways I could categorize my liked songs and make a playlist based on a song's mood, similarity amongst artists, their genres, language, decade, story, and thousands of other ways that I cannot even imagine. Too many options always crippled my decision-making abilities, and now I was left with more than two thousand songs in my playlist that I played on shuffle. They would change my mood from a hopeless romantic to just mindlessly dancing, and that was only half of it.  
-Then, I remembered the time I was listening to "Going to California" by Led Zeppelin while driving home. I was lost in the lyrics and the tempo of the song and had turned my volume very high. The song came to an end, and the red lights turned green, all while the next song played on HIGH VOLUME , John Bon Jovi, screaming: 
-**"SHOT THROUGH THE HEART, AND YOU'RE TO BLAME, DARLING, YOU GIVE LOVE A BAD NAME".**
+Then, I remembered the time I was listening to "Going to California" by Led Zeppelin while driving home. I was lost in the lyrics and the tempo of the song and had turned my volume very high. The song came to an end, and the red lights turned green, all while the next music played on HIGH VOLUME, John Bon Jovi, screaming: 
+**"SHOT THROUGH THE HEART, AND YOU'RE TO BLAME, DARLING, YOU GIVE LOVE A BAD NAME."**
 If one listens to "you give love a bad name," on its own, on high volume, one might enjoy it. But when you're lost in the dreams of "going to California, the last thing you want is Bon Jovi accusing you of giving love a bad name. It could give you a heart attack! 
 That was it! This is my destiny! This is why it was brought here on earth!!! I need to automate Spotify to make various playlists on my liked songs, and like songs alone, and do it fast, because while I like to pretend that I am an open-minded person, I have to admit I'm close-minded when it comes to music! I only listen to the 2000 songs I've liked, occasionally adding one or two to the collection. Besides, creating a playlist seems like such a daunting task. Either I would get too distracted and end up with a five-song playlist, or I would lay in my bed static upon waking up, dedicating 10 hours to the task. Either way, I would wind up frustrated. 
-### So here it is, an app that takes YOUR liked songs and creates a 20-song playlist for you, based on any song you choose! The first ten are in ascending order of tempo, and the next then in descending order, because WHAT GOSE UP MUST COME DOWN -Isaac Newton(probably).  
+### So here it is, an app that takes YOUR liked songs and creates a 20-song playlist for you, based on any music you choose! The first ten are in ascending order of tempo, and the next then in descending order, because *WHAT GOSE UP MUST COME DOWN -Isaac Newton(probably).*  
 ___
 
 ## Index:
@@ -60,21 +60,19 @@ ___
 <br/> 
 
 <img src="./Assets/heatmap.png" width="100%" height="100%">
-
 **Analysis:**  
-- danceability has a high correlation with valence (how happy a song is), but no other significant relations with any other features, not even the tempo, which is interesting to see. as a matter of fact danceability seems to have a negative correlation with tempo!
-- energy seems to be directly correlated with higher valence. songs that are higher in energy seem to also be VERY LOUD! and it looks like they have a very negative relation with causticness, meaning high energy songs are not acoustic and acoustic songs are low in energy!
-- to my surprise tempo doesn't seem to be highly correlated to danceability, energy or the valence of the song. however songs with higher tempo seem to be just moderately related to it's time-signiture, I was expecting a much stronger correlation.
-- duration seems to have the most negative correlation with other features, most notables are: valance and danceability.I though duration and liveness would have a positive correlation, since live performances tend to have a monolog before or after the performance, or could have a longer guitar solo.
+- danceability has a high correlation with valence (how happy a song is), but no other significant relations with any other features, not even the tempo, which is interesting to see. Danceability seems to have a negative correlation with tempo!
+- energy seems to be directly correlated with higher valence. Songs that are higher in energy also seem to be VERY LOUD! And it looks like they have a very antagonistic relationship with causticness, meaning increased energy songs are not acoustic and acoustic songs are low in energy!
+- to my surprise, the tempo doesn't seem to be highly correlated to danceability, energy, or the valence of the song. However, songs with higher beat seem to be just moderately related to its time-signature. I was expecting a much stronger correlation.
+- duration seems to have the most negative correlation with other features; most notables are valance and danceability. I though duration and liveness would have a positive correlation, since live performances tend to have a monolog before or after the performance, or could have a more extended guitar solo.
 - acoustic ness seems to have a negative correlation with many of the features, most notably with loudness and energy.
-key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the rest of a features.
+Key, mode, speechiness, instrumentalsness, liveness seem to have NO EFFECT on the rest of the features.
 
 <img src="./Assets/distribution.png" width="100%" height="100%"> 
-
 **Analysis:** 
-- speechiness, instrumentaliness, duration liveness, and loudness all seem to have outliers!
--danceability and tempo seem to have a very normal distribution. it is worth mentioning that some of the other features seem to fall under categorical variables, *ie. mode, key, time-sig.*
--  liveliness, and acoustic-nessis are right skewed, however the latter seems to have an outlier. valence and energy are left skewed, meaning they are more happy and higher energy songs in my liked songs!
+- speechiness, instrumentalness, duration liveness, and loudness all seem to have outliers!
+-danceability and tempo seem to have a very regular distribution. It is worth mentioning that some of the other features seem to fall under categorical variables, *, i.e., mode, key, time-sig.*
+-  liveliness and acoustic-sessions are right-skewed; however, the latter seems to have an outlier. Valence and energy are left-skewed, meaning they are more happy and higher energy songs in my liked songs!
 
 <img src="./Assets/key.png" width="70%" height="50%"> 
 <img src="./Assets/mode.png" width="70%" height="50%">
@@ -90,22 +88,22 @@ key, mode, speechiness, instrumentalness,liveness, seem to have NO EFFECT on the
 ___
 ## Preprocessing
 <br/> 
-by adding the name of the artist to the song, and lower-casing them I will save myself some headach. 
+by adding the name of the artist to the song, and lower-casing them I will save myself some headache.
 I will keep the uri to later search songs on spotify wit it and add them to the playlist
 
 ### Standard Scaling
-the name-artist column is the index, and by dropping the uri I only have numeric data.  standatd scaler my data. this assures that each column will have a μ = 0 and σ = 1, in simple english it means they are now all on the same scale!
+The name-artist column is the index, and by dropping the URI, I only have numeric data. Standard scaler my data, assuring that each column will have a μ = 0 and σ = 1; in simple English, it means they are now all on the same scale!
 
 ### Cosine Similarity
-now i'm going to use cosine similarity from sklearn, this is a meassure of similarity between two non-zero vectors, by meassuring the cosign of the angle between them. as we know cosine of 0° and 180° are 1 and -1 respectedly, and cosign of any other angle falls between the two, with cosine of 90° and 270° are both 0. therefore, we are comparing the possition of each item along the circle. this means two items taht are most simmilar will have an identical orientation and cosine simmilarity of 1, two items that have a 90° angle between their orientation will have a cosine simmilarity of 0, and if theyhave a cosine simmilarity of -1 then they are on the opposite sides of the spacterum, and will therefore have 180° angle between them.
-for this recomendation sysytem, we are assuming that each song is it's own vector, with unique features, we will create a recomendation system by comparing each song (vector) to every other song in a big matrix.
+Now I'm going to use cosine similarity from sklearn; this is a measure of similarity between two non-zero vectors by measuring the cosign of the angle between them. As we know, the cosine of 0° and 180° are 1 and -1, respectively, and cosine of any other angle falls between the two, with the cosine of 90° and 270° are both 0. therefore, we are comparing the position of each vector along the circle. This means the two most similar items will have an identical orientation and cosine similarity of close. Two things that have a 90° angle between their orientation will have a cosine similarity of 0. If they have a cosine similarity of -1, then they are on the opposite sides of the spectrum and will therefore have a 180° angle between them.
+For this recommendation system, we are assuming that each song is it's own vector, with unique features; we will create a recommendation system by comparing each piece (vector) to every other song in a big matrix.
 
 ## Recommender 
-- the recomendations are generated based on track features. 
-- this will assure that the songs in the playlist are musically simmilar, which is what i was hopeing for. 
-- I do not wish the recomender to be 100% accurate as I don't want to end up with a playlist of the same song on repeat.
-- for what it's worth and considering how small my dataframe was this these are spot on recomendations
-**here is a list of songs I got recomended based on ***harvest moon, neil young'***.**
+- the recommendations are generated based on track features. 
+- this will assure that the songs in the playlist are musically similar, which is what I was hoping for. 
+- I do not wish the recommender to be 100% accurate, as I don't want to end up with a playlist of the same song on repeat.
+- for what it's worth and considering how small my data frame was this these are spot on recommendations
+**here is a list of songs I got recommended based on ***Harvest Moon, Neil Young'***.**
 
 <img src="./Assets/recomendation.png" width="80%" height="60%">
 <br/> 
@@ -115,5 +113,5 @@ ___
 <br/> 
 
 - the very first thing I will do is create a flask app. 
-- then create a ui with react.
-- lastly I will host the app on a heroku server, since I really enjoyed it and I believe others could enjoy it as well. ***especially my firends*** 
+- then create a UI with react.
+- lastly, I will host the app on a Heroku server since I enjoyed it, and I believe others could enjoy it as well. ***especially my friends*** 
