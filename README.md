@@ -107,7 +107,7 @@ For this recommendation system, we are assuming that each song is it's own vecto
 
 <img src="./Assets/recomendation.png" width="80%" height="60%">
 
-***to see the playlist [click here](https://open.spotify.com/playlist/3XzHt8AN6CndbbK9GvJJEX?si=pfRVVLjKS76c7IGzbs50kg)***
+***to see the playlist [click here](https://open.spotify.com/playlist/5EFb1rNuaqHGh1SL5WpE0o)***
 
 <br/> 
 
