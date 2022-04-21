@@ -7,7 +7,7 @@ ___
 
 ## WHY?!
 
-**“After that communism was the only answer for me, I thought. And if you can’t be a communist and make money you have to be a rock n roll star, at least in Hoboken. “ -Lou Reed**
+**"After that communism was the only answer for me, I thought. And if you can’t be a communist and make money you have to be a rock n roll star, at least in Hoboken." -Lou Reed**
 
 My dream job would be working for Spotify as a data scientist since their product is the only product I can 100% get behind, **" and if I can't be a rock 'n' roll star and make money, then Spotify is the only answer for me, I thought; at least in Brooklyn."**
 I knew right from the start that I will dedicate my most crucial project to rock n roll and Spotify. 
